@@ -2,7 +2,7 @@
 from django.db import models
 
 class ChatMessage(models.Model):
-    user = models.CharField(max_length=255)
+    user_text = models.CharField(max_length=255)
     bot = models.CharField(max_length=255)
     conversation_id = models.CharField(max_length=100)
     history = models.TextField(blank=True)

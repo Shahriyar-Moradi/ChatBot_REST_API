@@ -20,8 +20,7 @@ from .views import ChatBotAPIView
 
 
 urlpatterns = [
-    # path('', chatbot_view, name='chatbot'),
-    # path('chat', chatbot_view, name='chatbot_api'),
-    path('chatbot_api', ChatBotAPIView.as_view(), name='chatbot_api'),
+
+    path('', ChatBotAPIView.as_view(), name='chat'),
     
 ]

@@ -153,7 +153,7 @@ LOGGING = {
         'file': {
             'level': 'INFO',
             'class': 'logging.FileHandler',
-            'filename': 'chatbot_logs.log',
+            'filename': 'chatbot-logs.log',
             'formatter': 'verbose',
         },
     },

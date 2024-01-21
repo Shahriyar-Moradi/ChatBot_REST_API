@@ -49,22 +49,18 @@ def generate_response(model, tokenizer, input_text, max_length=100):
 
 
 
-
-
-
 class ChatBotAPIView(APIView):
     serializer_class = BotSerializer
     def post(self, request, *args, **kwargs):
         serializer = BotSerializer(data=request.data)
         if serializer.is_valid():
-            user_text = serializer.validated_data['user']
+            user_text = serializer.validated_data['user_text']
             conversation_id = serializer.validated_data['conversation_id']
 
             # Retrieve or create a conversation instance
             conversation, created = ChatMessage.objects.get_or_create(
                 conversation_id=conversation_id
             )
-
     
             model, tokenizer = load_local_gpt2_model()
 

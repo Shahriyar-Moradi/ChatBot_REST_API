@@ -5,4 +5,4 @@ import datetime
 class BotSerializer(serializers.ModelSerializer):
     class Meta:
         model = ChatMessage
-        fields = ( 'user', 'conversation_id')
+        fields = ( 'user_text', 'conversation_id')
