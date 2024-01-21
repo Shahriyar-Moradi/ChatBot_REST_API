@@ -19,3 +19,9 @@ I use Swagger for API documentation.
 
 I use a simple SQLite database but you can change it to Postgresql database. You can just create your PostgreSQL database in pgAdmin and change the DATABASE in setting.py.
 
+# Choose a suitable LLM and explain why I chose this LLM.
+
+For hosting a local language model (LLM), you would typically consider factors such as model size, performance, resource requirements, and ease of integration. Also it's Open-source that can be used and modified without licensing fees and 
+performance which provides a good balance between performance and resource requirements.
+
+
